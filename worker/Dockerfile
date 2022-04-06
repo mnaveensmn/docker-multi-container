@@ -1,6 +1,6 @@
 FROM node
 WORKDIR "/app"
 COPY ./package.json ./
-RUN npm install
+RUN npm install -g npm@8.6.0
 COPY . .
 CMD ["npm","run","start"]
